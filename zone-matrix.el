@@ -105,17 +105,17 @@
   :group 'zone-matrix)
 
 
-(defcustom zmx-update-time 0.02
+(defcustom zmx-update-time 0.05
   "*The time to wait for before the next screen update."
   :group 'zone-matrix)
 
 
-(defcustom zmx-update-speed-factor 1.5
+(defcustom zmx-update-speed-factor 1.3
   "*The factor of light bar falling speed on every screen update."
   :group 'zone-matrix)
 
 
-(defcustom zmx-light-bar-max-length 30
+(defcustom zmx-light-bar-max-length 50
   "*The maximum length of light bar."
   :group 'zone-matrix)
 
@@ -216,7 +216,56 @@ into blank screen would be 1/N."
   "*Japan char table to form light bar."
   :group 'zone-matrix)
 
-(defcustom zmx-unicode-char-table zmx-japan-char-table
+(defcustom zmx-ddj-char-table
+  "\
+道可道\
+非常道\
+名可名\
+非常名\
+无，名天地之始\
+有，名万物之母\
+故常无\欲以观其妙\
+常有\
+欲以观其徼
+此两者同出而异名\
+同谓之玄\
+玄之又玄\
+众妙之门\
+\
+天地不仁\
+以万物为刍狗\
+圣人不仁\
+以百姓为刍狗\
+天地之间\
+其犹橐龠乎?\
+虚而不屈\
+动而愈出\
+多言数穷\
+不如守中\
+\
+视之不见名曰夷\
+听之不闻名曰希\
+搏之不得名曰微\
+此三者不可致诘\
+故混而为一\
+其上不皎\
+其下不昧\
+绳绳兮不可名\
+复归於无物\
+是谓无状之状\
+无物之象\
+是谓惚恍\
+迎之不见其首\
+随之不见其後\
+执古之道\
+以御今之有\
+能知古始\
+是名道纪"
+  "*daodejing char table to form light bar."
+  :group 'zone-matrix)
+
+
+(defcustom zmx-unicode-char-table zmx-ddj-char-table
   "*Unicode char table to form light bar."
   :group 'zone-matrix)
 
