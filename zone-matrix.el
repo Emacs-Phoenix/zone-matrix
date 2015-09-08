@@ -110,7 +110,7 @@
   :group 'zone-matrix)
 
 
-(defcustom zmx-update-speed-factor 1.3
+(defcustom zmx-update-speed-factor 1.5
   "*The factor of light bar falling speed on every screen update."
   :group 'zone-matrix)
 
