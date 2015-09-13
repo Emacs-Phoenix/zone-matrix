@@ -101,13 +101,8 @@
   (ad-activate 'zone)
 
   ;; trigger screen saver when Emacs is idle for a while
-<<<<<<< HEAD
-  (zone-when-idle (* 15
-                     15 ;; personally I feel 15 minutes is fine
-=======
   (zone-when-idle (* 30
                      30;; personally I feel 15 minutes is fine
->>>>>>> 2b60082... Adjustment Time
                      ))
   )
 
